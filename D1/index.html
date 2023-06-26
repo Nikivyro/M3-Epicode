@@ -61,6 +61,70 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
                 font-size: 3.5rem;
             }
         }
+        /* 1 */
+        .jumbotron h1{
+            font-weight: bold;
+            color: #333333;
+        }
+        /* 2 */
+        .nav > *{
+            text-transform: uppercase;
+        }
+        /* 3 */
+        .jumbotron .lead a{
+            border: 1px solid #333;
+            color: #333;
+            padding: 0.5rem;
+            border-radius: 0.35rem;
+        }
+        /* 4 */
+        .blog-main .blog-post:first-of-type{
+            background-color: lightblue;
+            padding: 1rem;
+        }
+        /* 5 */
+        .blog-main .blog-post:first-of-type hr{
+            background-color: red;
+        }
+        /* 6 */
+        .nav span:nth-child(even){
+            color: blue;
+        }
+        /* 7 */
+        .blog-sidebar div:nth-child(2) .list-unstyled li{
+            text-decoration: underline;
+        }
+        /* 8 */
+        .blog-main .blog-post:nth-of-type(2) .blog-post-meta a{
+            background-color: red;
+            color: #ffffff;
+        }
+        /* 9 */
+        .blog-main .blog-post:nth-of-type(3) ul li:nth-child(2){
+            background-color: green;
+            color: #ffffff;
+        }
+        /* 10 */
+        a.float-right{
+            position: fixed;
+            background-color: #333;
+            color: #fff;
+            right: 1rem;
+            bottom: 1rem;
+            padding: 1rem;
+        }
+        /* 11 */
+        .blog-pagination .btn-outline-secondary{
+            background-color: orange;
+        }
+        /* 12 */
+        .blog-pagination .btn-outline-secondary{
+            background-color: orange;
+        }
+        /* 13 */
+        footer a:nth-child(2){
+            background-color: violet;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet" />
 </head>
@@ -393,7 +457,27 @@ ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
         // EXTRA Crea con JavaScript la funzionalità per rimuovere il link "twitter" sotto alla sezione "Altro" nell'elemento "aside". Deve avvenire al caricamento della pagina, automticamente.
         // EXTRA Crea con JavaScript la funzionalità per rimuovere il corrispondente elemento padre dal DOM cliccando sul link "Continua a leggere".
         // EXTRA Crea con JavaScript la funzionalità per creare un alert col nome dell'autore ogni volta che il cursore passa sopra l'autore del post.
+        window.onload = function() {
+            // EXTRA 1
+            document.querySelector('.blog-sidebar div:last-child li:nth-of-type(2)').remove();
+            
+            // EXTRA 2
+            let readLinks = document.querySelectorAll(".stretched-link");
+            for (let link of readLinks)                
+                link.onclick = function (e) {                    
+                    // Closest cerca l'ancestor con quella classe più vicino
+                    e.target.closest(".row .col-md-6").remove();
+            }
 
+            // EXTRA 3
+            let authorNames = document.querySelectorAll(".blog-main .blog-post .blog-post-meta a");
+            // console.log(authorNames);
+            for (const nameAuthor of authorNames) {
+                nameAuthor.onmouseover = function(){
+                    alert(nameAuthor.text);
+                }                
+            }
+        };
     </script>
 </body>
 
