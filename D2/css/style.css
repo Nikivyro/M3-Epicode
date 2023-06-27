@@ -54,7 +54,7 @@ nav ul li a{
     flex-wrap: wrap;
     text-align: center;
 }
-.desc , .price{
+.desc, .price{
     width: 50%;
 }
 .desc h3{
@@ -74,10 +74,13 @@ nav ul li a{
 article .container{
     display: flex;
     background-color: #fef7e2;
+    border-radius: 2rem;
+    overflow: hidden;
 }
 .image-content{
     order: 1
 }
 .desc-content{
-    
+    order: 2;
+    padding: 1.2rem
 }
