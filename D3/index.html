@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>M3 - D3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><i class="bi bi-music-note-beamed me-1"></i>Music <sup class="text-success">App</sup></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#all" title="All Album">Album</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#best" title="Best Album">Best Album</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="all-album py-5" id="all">
+            <div class="container">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 gy-3">
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/makeba.jpeg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-truncate">Makeba</h5>
+                              <ul class="list-unstyled">
+                                <li><span>Jain</span> - <span class="small">Elettropop</span></li>
+                                <li><span class="small">4:10</span></li>
+                                <li><a href="#" class="btn btn-success rounded-circle float-end"><i class="bi bi-play-fill"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/machete.jpeg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-truncate">Ho paura di Uscire 2 - prod. Mace</h5>
+                              <ul class="list-unstyled">
+                                <li><span>Machete, Salmo, Lazza</span> - <span class="small">Rap</span></li>
+                                <li><span class="small">2:57</span></li>
+                                <li><a href="#" class="btn btn-success rounded-circle float-end"><i class="bi bi-play-fill"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/nib.jpeg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-truncate">N.I.B.</h5>
+                              <ul class="list-unstyled">
+                                <li><span>Balck Sabbath</span> - <span class="small">Rock</span></li>
+                                <li><span class="small">6:04</span></li>
+                                <li><a href="#" class="btn btn-success rounded-circle float-end"><i class="bi bi-play-fill"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/imagine.jpeg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-truncate">Natural</h5>
+                              <ul class="list-unstyled">
+                                <li><span>Imagine Dragons</span> - <span class="small">Pop Rock</span></li>
+                                <li><span class="small">3:09</span></li>
+                                <li><a href="#" class="btn btn-success rounded-circle float-end"><i class="bi bi-play-fill"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/crazy.jpeg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-truncate">Crazy Love</h5>
+                              <ul class="list-unstyled">
+                                <li><span>Marracash</span> - <span class="small">Rap</span></li>
+                                <li><span class="small">3:12</span></li>
+                                <li><a href="#" class="btn btn-success rounded-circle float-end"><i class="bi bi-play-fill"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/weekend.jpeg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-truncate">Blinding Lights</h5>
+                              <ul class="list-unstyled">
+                                <li><span>The Weeknd</span> - <span class="small">R&B/soul</span></li>
+                                <li><span class="small">3:21</span></li>
+                                <li><a href="#" class="btn btn-success rounded-circle float-end"><i class="bi bi-play-fill"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/makeba.jpeg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-truncate">Makeba</h5>
+                              <ul class="list-unstyled">
+                                <li><span>Jain</span> - <span class="small">Elettropop</span></li>
+                                <li><span class="small">4:10</span></li>
+                                <li><a href="#" class="btn btn-success rounded-circle float-end"><i class="bi bi-play-fill"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/machete.jpeg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-truncate">Ho paura di Uscire 2 - prod. Mace</h5>
+                              <ul class="list-unstyled">
+                                <li><span>Machete, Salmo, Lazza</span> - <span class="small">Rap</span></li>
+                                <li><span class="small">2:57</span></li>
+                                <li><a href="#" class="btn btn-success rounded-circle float-end"><i class="bi bi-play-fill"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/nib.jpeg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-truncate">N.I.B.</h5>
+                              <ul class="list-unstyled">
+                                <li><span>Balck Sabbath</span> - <span class="small">Rock</span></li>
+                                <li><span class="small">6:04</span></li>
+                                <li><a href="#" class="btn btn-success rounded-circle float-end"><i class="bi bi-play-fill"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/imagine.jpeg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-truncate">Natural</h5>
+                              <ul class="list-unstyled">
+                                <li><span>Imagine Dragons</span> - <span class="small">Pop Rock</span></li>
+                                <li><span class="small">3:09</span></li>
+                                <li><a href="#" class="btn btn-success rounded-circle float-end"><i class="bi bi-play-fill"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/crazy.jpeg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-truncate">Crazy Love</h5>
+                              <ul class="list-unstyled">
+                                <li><span>Marracash</span> - <span class="small">Rap</span></li>
+                                <li><span class="small">3:12</span></li>
+                                <li><a href="#" class="btn btn-success rounded-circle float-end"><i class="bi bi-play-fill"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/weekend.jpeg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-truncate">Blinding Lights</h5>
+                              <ul class="list-unstyled">
+                                <li><span>The Weeknd</span> - <span class="small">R&B/soul</span></li>
+                                <li><span class="small">3:21</span></li>
+                                <li><a href="#" class="btn btn-success rounded-circle float-end"><i class="bi bi-play-fill"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="best-album py-5 bg-dark text-white" id="best">
+            <div class="container">
+                <div class="row align-content-center align-items-center">
+                    <div class="col-12 col-md-4 mb-3 mb-lg-0">
+                        <img src="assets/best-album.jpeg" alt="" class="img-fluid rounded-2">
+                    </div>
+                    <div class="col-12 col-md-8 ps-lg-5">
+                        <h5 class="display-5 fw-bold">Hold On & Believe (feat. The Federal Empire)</h5>
+                        <span>Martin Garrix</span>
+                        <span>House</span>
+                        <span>3.54</span>
+                        <a href="#" class="btn btn-success rounded-circle"><i class="bi bi-play-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark py-3 text-white border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>&copy; 2023 MusicApp</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
