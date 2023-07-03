@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 
 <head>
   <title>Travelling - Travel Agency</title>
@@ -8,36 +8,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat,wght@300,600;&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
-    <!-- place navbar here -->
-    <nav class="navbar navbar-expand-sm navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="assets/logo.svg" alt="Travel Agency" width="80"></a>
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Offerte della Settimana</a>
+                    <a class="nav-link" href="#offer">Offerte della Settimana</a>
                 </li>
                 <li class="nav-item">
-                    <button class="nav-link" onclick="removeCard()">Remove Card</button>
+                    <a class="nav-link" href="#summer">Welcome Summer</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#day_offer">Offerta del giorno</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#last_minute">Last Minute</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
                 </li>
             </ul>
         </div>
@@ -45,21 +50,21 @@
     </nav>
   </header>
   <main>
-    <section class="p-5 mb-4 bg-light rounded-3">
+    <section class="hero text-white d-flex align-items-center">
       <div class="container py-5">
         <h1 class="display-5 fw-bold">Travelling - Travel Agency</h1>
         <p class="col-md-8 fs-4">Scopri il mondo con noi e vivi un'esperienza unica!</p>
-        <button class="btn btn-primary btn-lg" type="button">Scopri di più</button>
+        <a href="#offer" class="btn btn-light">Scopri di più</a>
       </div>
     </section>
     <section class="py-5" id="offer">
       <div class="container">
-        <div class="row">
+        <div class="row mb-3">
           <div class="col">
-            <h2>Offerte della Settimana</h2>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseOffer" role="button" aria-expanded="false" aria-controls="collapseOffer">
-             Chiudi
-            </a>
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="fw-bold fs-1">Offerte della Settimana</h2>
+              <a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseOffer" role="button" aria-expanded="false" aria-controls="collapseOffer">Chiudi</a>
+            </div>
           </div>
         </div>
         <div class="row gy-3 collapse show" id="collapseOffer">
@@ -67,8 +72,9 @@
             <div class="card">
               <img class="card-img-top" src="assets/giappone.jpg" alt="Giappone">
               <div class="card-body">
-                <h4 class="card-title">Giappone</h4>
-                <p class="card-text">Body</p>
+                <h4 class="card-title fw-bold">Giappone</h4>
+                <p class="card-text"><i class="bi bi-calendar4-week me-1"></i>Dal 06 lug al 18 lug</p>
+                <a href="#!" class="btn btn-primary btn-sm">Prenota</a>
               </div>
             </div>
           </div>
@@ -76,8 +82,9 @@
             <div class="card">
               <img class="card-img-top" src="assets/australia.jpg" alt="Australia">
               <div class="card-body">
-                <h4 class="card-title">Australia</h4>
-                <p class="card-text">Body</p>
+                <h4 class="card-title fw-bold">Australia</h4>
+                <p class="card-text"><i class="bi bi-calendar4-week me-1"></i>Dal 07 lug al 15 lug</p>
+                <a href="#!" class="btn btn-primary btn-sm">Prenota</a>
               </div>
             </div>
           </div>
@@ -85,8 +92,9 @@
             <div class="card">
               <img class="card-img-top" src="assets/patagonia.jpg" alt="Patagonia">
               <div class="card-body">
-                <h4 class="card-title">Patagonia</h4>
-                <p class="card-text">Body</p>
+                <h4 class="card-title fw-bold">Patagonia</h4>
+                <p class="card-text"><i class="bi bi-calendar4-week me-1"></i>Dal 07 lug al 15 lug</p>
+                <a href="#!" class="btn btn-primary btn-sm">Prenota</a>
               </div>
             </div>
           </div>
@@ -94,31 +102,33 @@
             <div class="card">
               <img class="card-img-top" src="assets/lapponia.jpg" alt="Lapponia">
               <div class="card-body">
-                <h4 class="card-title">Lapponia</h4>
-                <p class="card-text">Body</p>
+                <h4 class="card-title fw-bold">Lapponia</h4>
+                <p class="card-text"><i class="bi bi-calendar4-week me-1"></i>Dal 08 lug al 15 lug</p>
+                <a href="#!" class="btn btn-primary btn-sm">Prenota</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="min-vh-100 d-flex justify-content-center align-items-center bg-light" id="summer">
+    <section class="py-5 bg-light" id="summer">
       <div class="container">
-        <div class="row">
+        <div class="row mb-3">
           <div class="col">
-            <h2>Welcome Summer</h2>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseSummer" role="button" aria-expanded="false" aria-controls="collapseSummer">
-              Chiudi
-             </a>
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="fw-bold fs-1">Welcome Summer</h2>
+              <a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseSummer" role="button" aria-expanded="false" aria-controls="collapseSummer">Chiudi</a>
+            </div>
           </div>
         </div>
-        <div class="row collapse show" id="collapseSummer">
+        <div class="row gy-3 collapse show" id="collapseSummer">
           <div class="col-6 col-md-3 col-lg-2">
             <div class="card shadow">
               <img class="card-img-top" src="assets/azzorre.jpg" alt="Azzorre">
               <div class="card-body">
-                <h4 class="card-title">Azzorre</h4>
-                <p class="card-text">Body</p>
+                <h4 class="card-title h6 fw-bold">Azzorre</h4>
+                <p class="small"><i class="bi bi-calendar4-week me-1"></i>Dal 08 lug al 15 lug</p>
+                <a href="#!" class="btn btn-dark btn-sm">Prenota</a>
               </div>
             </div>
           </div>
@@ -126,8 +136,9 @@
             <div class="card shadow">
               <img class="card-img-top" src="assets/cappadocia.jpg" alt="Cappadocia">
               <div class="card-body">
-                <h4 class="card-title">Cappadocia</h4>
-                <p class="card-text">Body</p>
+                <h4 class="card-title h6 fw-bold">Cappadocia</h4>
+                <p class="small"><i class="bi bi-calendar4-week me-1"></i>Dal 07 lug al 15 lug</p>
+                <a href="#!" class="btn btn-dark btn-sm">Prenota</a>
               </div>
             </div>
           </div>
@@ -135,8 +146,9 @@
             <div class="card shadow">
               <img class="card-img-top" src="assets/corea-sud.jpg" alt="Corea del Sud">
               <div class="card-body">
-                <h4 class="card-title">Corea del Sud</h4>
-                <p class="card-text">Body</p>
+                <h4 class="card-title h6 fw-bold">Corea del Sud</h4>
+                <p class="small"><i class="bi bi-calendar4-week me-1"></i>Dal 08 lug al 15 lug</p>
+                <a href="#!" class="btn btn-dark btn-sm">Prenota</a>
               </div>
             </div>
           </div>
@@ -144,8 +156,9 @@
             <div class="card shadow">
               <img class="card-img-top" src="assets/guatemala.jpg" alt="Guatemala">
               <div class="card-body">
-                <h4 class="card-title">Guatemala</h4>
-                <p class="card-text">Body</p>
+                <h4 class="card-title h6 fw-bold">Guatemala</h4>
+                <p class="small"><i class="bi bi-calendar4-week me-1"></i>Dal 07 lug al 15 lug</p>
+                <a href="#!" class="btn btn-dark btn-sm">Prenota</a>
               </div>
             </div>
           </div>
@@ -153,8 +166,9 @@
             <div class="card shadow">
               <img class="card-img-top" src="assets/hawaii.jpg" alt="Hawaii">
               <div class="card-body">
-                <h4 class="card-title">Hawaii</h4>
-                <p class="card-text">Body</p>
+                <h4 class="card-title h6 fw-bold">Hawaii</h4>
+                <p class="small"><i class="bi bi-calendar4-week me-1"></i>Dal 06 lug al 18 lug</p>
+                <a href="#!" class="btn btn-dark btn-sm">Prenota</a>
               </div>
             </div>
           </div>
@@ -162,67 +176,73 @@
             <div class="card shadow">
               <img class="card-img-top" src="assets/india.jpg" alt="India">
               <div class="card-body">
-                <h4 class="card-title">India</h4>
-                <p class="card-text">Body</p>
+                <h4 class="card-title h6 fw-bold">India</h4>
+                <p class="small"><i class="bi bi-calendar4-week me-1"></i>Dal 06 lug al 18 lug</p>
+                <a href="#!" class="btn btn-dark btn-sm">Prenota</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="min-vh-100 justify-content-center align-items-center d-none d-md-flex" id="day_offer">
+    <section class="py-5 d-none d-md-flex" id="day_offer">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <h2>Offerta del giorno</h2>
+        <div class="row mb-3">
+          <div class="col text-center">
+            <h2 class="fs-1 fw-bold">Offerta del giorno</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-12 col-md-8 mb-4 mb-lg-0">
-            <img src="assets/tanzania.jpg" alt="" class="img-fluid">
+            <img src="assets/tanzania.jpg" alt="" class="img-fluid rounded-3">
           </div>
           <div class="col-12 col-md-4">
-            <h2>Tanziania</h2>
-            <p></p>
-            <a href="#" class="btn btn-secondary">Prenota ora!</a>
+            <h2 class="display-3 fw-bold">Tanzania</h2>
+            <span class="badge bg-danger">Offerta</span>
+            <p class="mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quod ea distinctio cum sunt libero!</p>
+            <p>Dal 20/07/2023 al 27/07/2023</p>
+            <a href="#" class="btn btn-primary">Prenota ora!</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="min-vh-100 justify-content-center align-items-center d-none d-md-flex" id="last_minute">
+    <section class="py-5 bg-light" id="last_minute">
       <div class="container">
-        <div class="row">
+        <div class="row mb-3">
           <div class="col">
-            <h2>Last Minute</h2>
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="fw-bold fs-1">Last Minute</h2>
+              <a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseLast" role="button" aria-expanded="false" aria-controls="collapseLast">Chiudi</a>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-6 col-md-3 col-lg-2">
+        <div class="row gy-3 collapse show" id="collapseLast">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="card shadow">
               <img class="card-img-top rounded" src="assets/azzorre.jpg" alt="Azzorre">
             </div>
           </div>
-          <div class="col-6 col-md-3 col-lg-2">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="card shadow">
               <img class="card-img-top rounded" src="assets/cappadocia.jpg" alt="Cappadocia">
             </div>
           </div>
-          <div class="col-6 col-md-3 col-lg-2">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="card shadow">
               <img class="card-img-top rounded" src="assets/corea-sud.jpg" alt="Corea del Sud">
             </div>
           </div>
-          <div class="col-6 col-md-3 col-lg-2">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="card shadow">
               <img class="card-img-top rounded" src="assets/guatemala.jpg" alt="Guatemala">
             </div>
           </div>
-          <div class="col-6 col-md-3 col-lg-2">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="card shadow">
               <img class="card-img-top rounded" src="assets/hawaii.jpg" alt="Hawaii">
             </div>
           </div>
-          <div class="col-6 col-md-3 col-lg-2">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="card shadow">
               <img class="card-img-top rounded" src="assets/india.jpg" alt="India">
             </div>
@@ -234,7 +254,7 @@
       <div class="container text-center">
         <div class="row mb-5">
           <div class="col">
-            <h2>Testimonials</h2>
+            <h2 class="fw-bold fs-1">Testimonials</h2>
           </div>
         </div>
         <div class="row">
@@ -287,6 +307,7 @@
       <div class="row align-items-center">
         <div class="col">
           <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-light">Contattaci</a>
+          <button onclick="removeCards()" class="btn btn-light ms-2"><i class="bi bi-trash me-1"></i> Remove Cards</button>          
         </div>
         <div class="col text-end">
           <p class="text-white small mt-3">&copy; Travelling 2023</p>
@@ -318,14 +339,8 @@
       </div>
     </div>
   </div>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 
