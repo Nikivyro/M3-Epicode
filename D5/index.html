@@ -6,11 +6,14 @@
     <title>Web Students</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header class="position-relative">
+      <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="assets/logo.svg" alt="WebStudents Logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,49 +67,1035 @@
               </li>
             </ul>
           </div>
-          <div class="account-menu">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="bi bi-bell"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="assets/avatar-1.jpg" class="rounded-circle" width="48">
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
+          <div class="account-menu d-flex align-items-center ms-auto">
+            <div class="notification position-relative bg-light rounded-circle me-3">
+              <a class="text-dark" href="#" role="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+              </a>
+            </div>
+            <div class="user btn-group">
+              <button type="button" class="btn border-0 dropdown-toggle position-relative avatar-img" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                <img src="assets/avatar-1.jpg" alt="" class="img-fluid rounded-circle" width="40">
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end shadow border-0">
+                <li class="px-3">
+                  <div class="d-flex align-items-center">
+                    <div class="position-relative avatar-img">
+                      <img src="assets/avatar-1.jpg" alt="" class="img-fluid rounded-circle me-3" width="40">
+                    </div>
+                    <div class="name-content">
+                      <h6 class="small fw-bold mb-0">Annette Black</h6>
+                      <span class="text-muted small">annette@geeksui.com</span>
+                    </div>
+                  </div>
+                </li>
+                <hr>
+                <li class="mb-2"><a class="dropdown-item small" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user me-1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Profile</a></li>
+                <li class="mb-2"><a class="dropdown-item small" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>Subscription</a></li>
+                <li class="mb-2"s><a class="dropdown-item small" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings me-1"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>Settings</a></li>
+                <hr>
+                <li><a class="dropdown-item small" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out me-1"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>Logout</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <section class="hero d-flex align-items-center text-white bg-primary">
-        <div class="container">
+      <section class="hero d-flex align-items-center text-white">
+        <div class="container pt-5">
           <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 align-self-center">
               <h1 class="display-5 fw-bold">Welcome Web Students!</h1>
               <p class="h4 text-white-50 my-4">Hand-picked Istructor and expertly crafted courses, designed for the modern students and entrepreneur.</p>
-              <a href="" class="btn btn-success rounded me-1">Browse Courses</a>
-              <a href="" class="btn btn-light rounded">Are You Instructor?</a>              
+              <a href="#recommended" class="btn btn-success rounded me-1">Browse Courses</a>
+              <a href="#!" class="btn btn-light rounded">Are You Instructor?</a>              
+            </div>
+            <div class="col-lg-6">
+              <img src="assets/hero-img.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
       </section>
+      <section class="subhero shadow-sm">
+        <div class="container py-4">
+          <div class="row row-cols-1 row-cols-lg-3">
+            <div class="col">
+              <div class="d-flex align-items-center">
+                <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg></div>
+                <div class="caption ms-3">
+                  <h3 class="h5 mb-0">30,000 online courses</h3>
+                  <p class="small mb-0">Enjoy a variety of fresh topics</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex align-items-center">
+                <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+                <div class="caption ms-3">
+                  <h3 class="h5 mb-0">Expert instruction</h3>
+                  <p class="small mb-0">Find the right instruction for you</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex align-items-center">
+                <div class="icons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+                <div class="caption ms-3">
+                  <h3 class="h5 mb-0">Lifetime access</h3>
+                  <p class="small mb-0">Learn on your schedule</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-4" id="recommended">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col">
+              <h2 class="h3">Recommended to you</h2>
+            </div>
+          </div>
+          <div id="carouselExampleControls" class="carousel slide d-none d-lg-block">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-graphql.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">GraphQL: introduction to graphQL for beginners</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>2h 40m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-4 me-1"></i> Advance</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>2,5</span>
+                            <span class="text-dark ms-2">(1,500)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$500</span> <span class="text-decoration-line-through small text-muted">$600</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-5.jpg" alt="" class="rounded-circle me-2">
+                          <span>Brooklyn Simmons</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-javascript.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">A Complete Beginner's Guide to JavaScript</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>4h 10m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-4 me-1"></i> Advance</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>3,5</span>
+                            <span class="text-dark ms-2">(7,500)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$700</span> <span class="text-decoration-line-through small text-muted">$850</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-1.jpg" alt="" class="rounded-circle me-2">
+                          <span>Jenny Wilson</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-node.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">Beginning Node.js, Express & MongoDB Development</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>2h 00m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-3 me-1"></i> Intermediate</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half me-1"></i>
+                            <span>4,0</span>
+                            <span class="text-dark ms-2">(15,700)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$800</span> <span class="text-decoration-line-through small text-muted">$950</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-3.jpg" alt="" class="rounded-circle me-2">
+                          <span>Sina Ray</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-laravel.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">Laravel: The Ultimate Beginner's Guide to Learn</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>2h 00m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-2 me-1"></i> Beginner</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>4.5</span>
+                            <span class="text-dark ms-2">(2,500)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$170</span> <span class="text-decoration-line-through small text-muted">$220</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-7.jpg" alt="" class="rounded-circle me-2">
+                          <span>Sobo Rikhan</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div id="carouselRecommendedMobile" class="carousel slide d-block d-lg-none">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-graphql.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">GraphQL: introduction to graphQL for beginners</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>2h 40m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-4 me-1"></i> Advance</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>2,5</span>
+                            <span class="text-dark ms-2">(1,500)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$500</span> <span class="text-decoration-line-through small text-muted">$600</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-5.jpg" alt="" class="rounded-circle me-2">
+                          <span>Brooklyn Simmons</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-javascript.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">A Complete Beginner's Guide to JavaScript</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>4h 10m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-4 me-1"></i> Advance</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>3,5</span>
+                            <span class="text-dark ms-2">(7,500)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$700</span> <span class="text-decoration-line-through small text-muted">$850</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-1.jpg" alt="" class="rounded-circle me-2">
+                          <span>Jenny Wilson</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-node.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">Beginning Node.js, Express & MongoDB Development</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>2h 00m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-3 me-1"></i> Intermediate</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half me-1"></i>
+                            <span>4,0</span>
+                            <span class="text-dark ms-2">(15,700)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$800</span> <span class="text-decoration-line-through small text-muted">$950</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-3.jpg" alt="" class="rounded-circle me-2">
+                          <span>Sina Ray</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-laravel.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">Laravel: The Ultimate Beginner's Guide to Learn</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>2h 00m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-2 me-1"></i> Beginner</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>4.5</span>
+                            <span class="text-dark ms-2">(2,500)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$170</span> <span class="text-decoration-line-through small text-muted">$220</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-7.jpg" alt="" class="rounded-circle me-2">
+                          <span>Sobo Rikhan</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselRecommendedMobile" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselRecommendedMobile" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="py-4" id="popular">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col">
+              <h2 class="h3">Most Popular</h2>
+            </div>
+          </div>
+          <div id="carouselPopularControls" class="carousel slide d-none d-lg-block">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-html.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">HTML Full Course - Build a Website Tutorial</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>3h 16m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-2 me-1"></i> Beginner</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>3,0</span>
+                            <span class="text-dark ms-2">(1,600)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$550</span> <span class="text-decoration-line-through small text-muted">$700</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-8.jpg" alt="" class="rounded-circle me-2">
+                          <span>Miston Wilson</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-javascript.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">A Complete Beginner's Guide to JavaScript</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>4h 10m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-4 me-1"></i> Advance</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>3,5</span>
+                            <span class="text-dark ms-2">(7,500)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$700</span> <span class="text-decoration-line-through small text-muted">$850</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-1.jpg" alt="" class="rounded-circle me-2">
+                          <span>Jenny Wilson</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-node.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">Beginning Node.js, Express & MongoDB Development</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>2h 00m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-3 me-1"></i> Intermediate</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half me-1"></i>
+                            <span>4,0</span>
+                            <span class="text-dark ms-2">(15,700)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$800</span> <span class="text-decoration-line-through small text-muted">$950</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-3.jpg" alt="" class="rounded-circle me-2">
+                          <span>Sina Ray</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-react.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">How to easily create a website with React</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>3h 55m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-4 me-1"></i> Advance</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half me-1"></i>
+                            <span>4,5</span>
+                            <span class="text-dark ms-2">(2,500)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$500</span> <span class="text-decoration-line-through small text-muted">$750</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-2.jpg" alt="" class="rounded-circle me-2">
+                          <span>April Noms</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPopularControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPopularControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div id="carouselPopularMobile" class="carousel slide d-block d-lg-none">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-html.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">HTML Full Course - Build a Website Tutorial</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>3h 16m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-2 me-1"></i> Beginner</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>3,0</span>
+                            <span class="text-dark ms-2">(1,600)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$550</span> <span class="text-decoration-line-through small text-muted">$700</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-8.jpg" alt="" class="rounded-circle me-2">
+                          <span>Miston Wilson</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-javascript.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">A Complete Beginner's Guide to JavaScript</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>4h 10m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-4 me-1"></i> Advance</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>3,5</span>
+                            <span class="text-dark ms-2">(7,500)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$700</span> <span class="text-decoration-line-through small text-muted">$850</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-1.jpg" alt="" class="rounded-circle me-2">
+                          <span>Jenny Wilson</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-node.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">Beginning Node.js, Express & MongoDB Development</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>2h 00m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-3 me-1"></i> Intermediate</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half me-1"></i>
+                            <span>4,0</span>
+                            <span class="text-dark ms-2">(15,700)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$800</span> <span class="text-decoration-line-through small text-muted">$950</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-3.jpg" alt="" class="rounded-circle me-2">
+                          <span>Sina Ray</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-react.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">How to easily create a website with React</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>3h 55m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-4 me-1"></i> Advance</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half me-1"></i>
+                            <span>4,5</span>
+                            <span class="text-dark ms-2">(2,500)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$500</span> <span class="text-decoration-line-through small text-muted">$750</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-2.jpg" alt="" class="rounded-circle me-2">
+                          <span>April Noms</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPopularMobile" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPopularMobile" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="py-4" id="trending">
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col">
+              <h2 class="h3">Trending</h2>
+            </div>
+          </div>
+          <div id="carouselTrendingControls" class="carousel slide d-none d-lg-block">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-gatsby.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">Revolutionize how you build the web</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>1h 46m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-3 me-1"></i> Intermediate</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>2,0</span>
+                            <span class="text-dark ms-2">(16,500)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$800</span> <span class="text-decoration-line-through small text-muted">$850</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-6.jpg" alt="" class="rounded-circle me-2">
+                          <span>Jenny Wilson</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-html.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">HTML Full Course - Build a Website Tutorial</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>3h 16m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-2 me-1"></i> Beginner</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>3,0</span>
+                            <span class="text-dark ms-2">(1,600)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$550</span> <span class="text-decoration-line-through small text-muted">$700</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-8.jpg" alt="" class="rounded-circle me-2">
+                          <span>Miston Wilson</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-node.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">Beginning Node.js, Express & MongoDB Development</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>2h 00m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-3 me-1"></i> Intermediate</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half me-1"></i>
+                            <span>4,0</span>
+                            <span class="text-dark ms-2">(15,700)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$800</span> <span class="text-decoration-line-through small text-muted">$950</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-3.jpg" alt="" class="rounded-circle me-2">
+                          <span>Sina Ray</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-laravel.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">Laravel: The Ultimate Beginner's Guide to Learn</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>2h 00m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-2 me-1"></i> Beginner</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>4.5</span>
+                            <span class="text-dark ms-2">(2,500)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$170</span> <span class="text-decoration-line-through small text-muted">$220</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-7.jpg" alt="" class="rounded-circle me-2">
+                          <span>Sobo Rikhan</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrendingControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTrendingControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div id="carouselTrendingMobile" class="carousel slide d-block d-lg-none">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-gatsby.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">Revolutionize how you build the web</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>1h 46m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-3 me-1"></i> Intermediate</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>2,0</span>
+                            <span class="text-dark ms-2">(16,500)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$800</span> <span class="text-decoration-line-through small text-muted">$850</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-6.jpg" alt="" class="rounded-circle me-2">
+                          <span>Jenny Wilson</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-html.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">HTML Full Course - Build a Website Tutorial</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>3h 16m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-2 me-1"></i> Beginner</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>3,0</span>
+                            <span class="text-dark ms-2">(1,600)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$550</span> <span class="text-decoration-line-through small text-muted">$700</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-8.jpg" alt="" class="rounded-circle me-2">
+                          <span>Miston Wilson</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-node.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">Beginning Node.js, Express & MongoDB Development</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>2h 00m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-3 me-1"></i> Intermediate</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half me-1"></i>
+                            <span>4,0</span>
+                            <span class="text-dark ms-2">(15,700)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$800</span> <span class="text-decoration-line-through small text-muted">$950</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-3.jpg" alt="" class="rounded-circle me-2">
+                          <span>Sina Ray</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card rounded-3 overflow-hidden">
+                      <div class="image-wrapper">
+                        <img src="assets/course-laravel.jpg" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title h6">Laravel: The Ultimate Beginner's Guide to Learn</h3>
+                        <ul class="row list-unstyled">
+                          <li class="col-lg-6 py-2 small">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock me-2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>2h 00m</span>
+                          </li>
+                          <li class="col-lg-6 py-2 small level"><span><i class="bi bi-reception-2 me-1"></i> Beginner</span></li>
+                          <li class="col-12 d-flex rating small py-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star me-1"></i>
+                            <span>4.5</span>
+                            <span class="text-dark ms-2">(2,500)</span>
+                          </li>
+                          <li class="col-12 py-2"><span class="fw-bold me-1">$170</span> <span class="text-decoration-line-through small text-muted">$220</span></li>
+                        </ul>
+                        <hr>
+                        <div class="d-flex align-items-center teach">
+                          <img src="assets/avatar-7.jpg" alt="" class="rounded-circle me-2">
+                          <span>Sobo Rikhan</span>
+                          <span class="ms-auto"><a href="" class="text-dark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg></a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrendingMobile" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTrendingMobile" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="mt-5">
+      <div class="container">
+        <hr>
+        <div class="row small">
+          <div class="col">
+            <span>&copy; 2023 Geeks. All Rights Reserved.</span> 
+          </div>
+          <div class="col">
+            <ul class="list-unstyled d-flex justify-content-end">
+              <li class="me-2"><a href="">Privacy</a></li>
+              <li class="me-2"><a href="">Terms</a></li>
+              <li class="me-2"><a href="">Feedbacks</a></li>
+              <li><a href="">Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
