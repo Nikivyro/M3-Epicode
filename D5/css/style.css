@@ -72,6 +72,13 @@ a:hover{
     color: #c28135;
     width: 16px;
 }
+.carousel-item .card{
+    transition: all .5s;
+}
+.carousel-item .card:hover{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    transform: scale(1.05);
+}
 .rating{
     color: #ffaa46;
 }
@@ -85,6 +92,9 @@ a:hover{
     .navbar-toggler{
         order: 13;
     }
+}
+.feather.feather-bookmark:hover {
+    fill: currentColor;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -103,4 +113,5 @@ a:hover{
 .image-wrapper img {
   max-width: 100%;
   max-height: 100%;
+  border-radius: 0.5rem;
 }
