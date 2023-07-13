@@ -27,7 +27,7 @@ main{
 }
 .hero .actions{
     right: 0;
-    bottom: 15%;
+    bottom: 10%;
 }
 .hero .actions .volume{
     width: 32px;
@@ -70,8 +70,8 @@ main{
 .card-body .nav-link:hover{
     background-color: rgba(255, 255, 255, 0.08);
 }
-.card-body svg{
-    width: 48px;
+.card-body img{
+    filter: invert();
 }
 .card-body .type span{
     position: relative;
