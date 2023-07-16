@@ -4,9 +4,6 @@ body{
 [data-bs-theme=dark]{
     --bs-body-bg: #141414;
 }
-/* .bg-dark {
-   --bs-bg-opacity: 0;
-} */
 header{
     font-size: 0.9rem;
 }
@@ -27,7 +24,6 @@ main{
     background-color: transparent;
     text-decoration: underline;
 }
-
 .hero{
     min-height: 60vh;
     background: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)), url(../imgs/movies/hero.webp) center / cover;
